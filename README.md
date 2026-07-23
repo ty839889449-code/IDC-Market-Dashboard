@@ -1,31 +1,23 @@
-# IDC 八市场交互网页版本
+# TECNO CAMON 数据看板
 
-这是一个完全静态、单文件的网页看板，不依赖数据库或服务器接口。
+这是一个可直接部署到 GitHub Pages 的静态网页版本，包含 25 个市场和 9 档价位的交互分析。
 
-## 已支持
-- 点选市场：EE1（俄罗斯）、巴基斯坦、孟加拉、非洲、菲律宾、沙特、泰国、印尼
-- 点选九档价格带
-- 当前视图链接分享：例如 `?market=Philippines&price=350-400`
-- 打印或另存为 PDF
-- 手机、平板和电脑自适应
+## 发布到 GitHub Pages
 
-## 本地查看
-双击 `index.html`，或用浏览器打开即可。
+1. 在 GitHub 新建一个仓库。
+2. 将本目录内的全部文件上传到仓库根目录。
+3. 打开仓库的 **Settings → Pages**。
+4. 在 **Build and deployment** 中，将 **Source** 设为 **Deploy from a branch**。
+5. 选择 `main` 分支和 `/ (root)` 目录，点击 **Save**。
+6. 等待约 1–3 分钟，GitHub 会生成访问地址：
 
-## 发布成公共链接
-### 方案一：公司内部服务器
-把 `index.html` 上传到任意静态网站目录，并设置为默认首页。
+   `https://你的GitHub用户名.github.io/仓库名/`
 
-### 方案二：GitHub Pages
-1. 新建仓库并上传 `index.html`
-2. 在 Settings → Pages 中选择从主分支发布
-3. 发布后即可获得公共网址
+## 文件说明
 
-### 方案三：Netlify / Vercel
-将整个文件夹拖入部署页面，或连接代码仓库，即可生成网址。
+- `index.html`：完整交互看板，网站首页。
+- `.nojekyll`：关闭 Jekyll 处理，确保静态页面按原结构发布。
 
-## 指定国家与价格带的链接
-部署后可在网址后加入参数：
-- 菲律宾350–400美元：`?market=Philippines&price=350-400`
-- 印尼450–500美元：`?market=Indonesia&price=450-500`
-- 沙特600美元以上：`?market=Saudi&price=600-plus`
+## 注意
+
+看板包含 IDC 市场分析数据。若使用公开仓库或公开 GitHub Pages，任何获得链接的人都可以访问。
