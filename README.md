@@ -1,49 +1,31 @@
-# TECNO市场机会看板 v4
+# TECNO Market Opportunity Dashboard — Encrypted GitHub Pages Release
 
-版本：`2026-08-11-v4`  
-数据周期：IDC 2026Q1  
-部署方式：GitHub Pages静态网页
+Dashboard version: `2026-08-12-v5`  
+Secure package version: `2026-08-12-staticrypt-v2`
 
-## v4分析结构
+This package contains the complete TECNO Market Opportunity Dashboard encrypted with StatiCrypt 3.5.4. The updated country comparison distinguishes TECNO and Infinix full-market shares, rankings, year-over-year share movement, and acquisition opportunities for every market.
 
-单一市场按照以下顺序分析：
+## Deploy to GitHub Pages
 
-1. 核心结论
-2. 九档价位同比增量与品牌贡献
-3. 各品牌分价位段同比变化
-4. TECNO × Infinix对照：TECNO现状、Infinix镜像、TECNO机会
-5. 大盘存量、价格迁移与换机机会
-6. 350美元以上结构机会
-7. 各价位段核心产品与竞品用户转化
-8. TECNO组合与CAMON、POVA、SPARK分线机会
-9. 产品线价格梯度与进入路径
+1. Create a new GitHub repository. Do not reuse a repository whose history contains the plaintext dashboard.
+2. Upload all files from this package to the repository root.
+3. Open `Settings > Pages`.
+4. Under `Build and deployment`, choose `Deploy from a branch`.
+5. Select `main` and `/ (root)`, then save.
+6. Open the generated `github.io` URL over HTTPS and test the password gate.
 
-## v4实质更新
+## Included files
 
-- 将原第三、第四部分合并为一个“TECNO × Infinix对照”模块，按点选顺序展示“TECNO现状 → Infinix镜像 → TECNO机会”。
-- TECNO页签先独立判断品牌规模、价格阵地、增长引擎、错失机会和外部竞品用户来源。
-- Infinix页签只呈现品牌事实、强势价位、核心产品和与TECNO的结构关系，不替代TECNO结论。
-- TECNO机会页签新增逐价位获取判断，明确Infinix可观察换机盘、首要获取档、同档或邻档路径、获取形式与承接产品线。
-- 获取形式覆盖“换机承接、让渡截流、升级迁移、标杆复用、错位扩张、强盘跟进、存量试点”等情形。
-- 逐市场识别“Infinix领先型、TECNO领先型、双品牌均衡型、Infinix缺位型”，分别给出借鉴或规避策略。
-- 在Infinix强势市场，TECNO复用已验证的价格锚点与渠道触点，但以影像、设计和系列人群做差异截流；在TECNO强势市场，避免同价同参和内部资源冲突，优先获取外部品牌用户。
-- 后续章节顺次重编号，核心结论、市场Hero、导航和分析框架同步更新为v4。
+- `index.html`: encrypted dashboard and password gate.
+- `.nojekyll`: prevents Jekyll processing.
+- `robots.txt`: requests that crawlers do not index the site.
+- `VERSION.txt`: source and encrypted file checksums.
+- `CHANGELOG.md`: V5 page-structure and analysis verification.
 
-## 数据口径
+## Security notes
 
-- 市场、品牌、价位、机型和Sell-in来自本次IDC 2026Q1重点国家源表。
-- 同比净增量为`26Q1出货－25Q1出货`；同比增速为净增量除以25Q1出货。
-- “TECNO优先市场机会”综合考虑价位段正增量、26Q1规模和TECNO档内份额缺口，用于销售与产品资源优先级判断，不等于销量预测。
-- Infinix季度价格盘以25Q1与26Q1较高季度作为换机来源代理，仅用于判断潜在获取价位，不等于真实在网保有量或可转化销量。
-- “结构重叠度”比较两品牌九档价格构成，不代表真实用户重合率。
-- 近24个月可观察存量为连续Sell-in累计代理值，不等同于真实在网设备保有量。
+- Do not upload the plaintext source HTML, IDC spreadsheets, or decrypted exports to the public repository.
+- The shared password is not stored in this package.
+- To rotate the password, re-encrypt the source and redeploy the generated `index.html`.
+- A shared-password static page cannot identify individual viewers or prevent an authorized viewer from saving decrypted content.
 
-## GitHub Pages部署
-
-1. 解压部署包。
-2. 将`index.html`、`.nojekyll`和`README.md`上传到GitHub仓库根目录。
-3. 进入`Settings → Pages`。
-4. 选择`Deploy from a branch`、`main`分支和`/(root)`目录。
-5. 保存并等待GitHub生成访问链接。
-
-> 看板包含IDC市场分析数据。若部署到公开仓库，任何获得链接的人均可访问。
