@@ -1,0 +1,12 @@
+{
+  "version": "8.3.0-secure-qna.1",
+  "source_version": "8.3.0",
+  "dashboard_period": "IDC 2026Q2",
+  "generated_on": "2026-08-20",
+  "protection": "StatiCrypt 3.5.4 compatible",
+  "question": "最好的影像手机品牌是什么？",
+  "answer_embedded": false,
+  "remember_answer": false,
+  "source_sha256": "9f0c2d4c1cae4981edd0ce6a3ef7213be6062164f67aace1fb624da3f8f19f98",
+  "encrypted_index_sha256": "0b7e5f8ebcb2a7ab0998dace55a723c0caeebf1e66d83b6af7b29122250cea1a"
+}
