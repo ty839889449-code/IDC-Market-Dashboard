@@ -1,31 +1,30 @@
-# TECNO Market Opportunity Dashboard — Encrypted GitHub Pages Release
+# TECNO Market Opportunity Dashboard — Secure GitHub Pages Package
 
-Dashboard version: `2026-08-12-v5`  
-Secure package version: `2026-08-12-staticrypt-v2`
+版本：`8.3.0-secure-qna.1`
 
-This package contains the complete TECNO Market Opportunity Dashboard encrypted with StatiCrypt 3.5.4. The updated country comparison distinguishes TECNO and Infinix full-market shares, rankings, year-over-year share movement, and acquisition opportunities for every market.
+本目录可直接部署到 GitHub Pages。`index.html` 使用 StatiCrypt 兼容的浏览器端加密，访问者首先看到问答验证页，答对后才会在本地浏览器中解密完整看板。
 
-## Deploy to GitHub Pages
+## 验证问题
 
-1. Create a new GitHub repository. Do not reuse a repository whose history contains the plaintext dashboard.
-2. Upload all files from this package to the repository root.
-3. Open `Settings > Pages`.
-4. Under `Build and deployment`, choose `Deploy from a branch`.
-5. Select `main` and `/ (root)`, then save.
-6. Open the generated `github.io` URL over HTTPS and test the password gate.
+问题：`最好的影像手机品牌是什么？`
 
-## Included files
+答案未写入本部署包。验证区分大小写，请由看板所有者单独告知授权用户。
 
-- `index.html`: encrypted dashboard and password gate.
-- `.nojekyll`: prevents Jekyll processing.
-- `robots.txt`: requests that crawlers do not index the site.
-- `VERSION.txt`: source and encrypted file checksums.
-- `CHANGELOG.md`: V5 page-structure and analysis verification.
+## GitHub Pages 部署
 
-## Security notes
+1. 新建一个没有提交过明文看板的 GitHub 仓库。
+2. 将本目录内的全部文件上传到仓库根目录。
+3. 进入 `Settings > Pages`。
+4. 在 `Build and deployment` 中选择 `Deploy from a branch`。
+5. 选择 `main` 与 `/ (root)`，保存。
+6. 打开 GitHub 提供的 `github.io` 地址，检查问答页与解密后的看板。
 
-- Do not upload the plaintext source HTML, IDC spreadsheets, or decrypted exports to the public repository.
-- The shared password is not stored in this package.
-- To rotate the password, re-encrypt the source and redeploy the generated `index.html`.
-- A shared-password static page cannot identify individual viewers or prevent an authorized viewer from saving decrypted content.
+## 文件
 
+- `index.html`：加密后的完整看板与问答入口。
+- `.nojekyll`：阻止 Jekyll 改写静态页面。
+- `robots.txt`：请求搜索引擎不要收录。
+- `version.json`：版本、来源与校验摘要。
+- `SECURITY.md`：部署安全注意事项。
+
+请勿把原始 HTML、IDC 数据文件、答案或解密后的导出文件提交到公开仓库。
