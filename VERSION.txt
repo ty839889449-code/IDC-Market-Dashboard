@@ -1,9 +1,0 @@
-dashboard_version=2026-08-12-v5
-secure_package_version=2026-08-12-staticrypt-v2
-staticrypt_version=3.5.4
-encryption=AES-256-WebCrypto
-source_index_bytes=1786329
-source_index_sha256=3dece8609f01f84d21e9fa3839a8639df07da1b1a7e4eb552fdaf464752c2c18
-encrypted_index_bytes=3607798
-encrypted_index_sha256=f60e201035f73c359e11d1fb4ce9c4ee8554a112cb95b036891f0e0a659c7c24
-
