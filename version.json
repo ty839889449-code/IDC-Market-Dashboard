@@ -1,0 +1,15 @@
+{
+  "release": "v1.2-secure.2",
+  "source_file": "TECNO 26Q2 IDC市场机会看板_V1.2.html",
+  "dashboard_period": "IDC 2026Q2",
+  "generated_on": "2026-08-26",
+  "protection": "StatiCrypt 3.5.4 compatible",
+  "access_mode": "question_answer",
+  "access_question": "最好的影像手机品牌？",
+  "password_embedded_as_plaintext": false,
+  "remember_password": false,
+  "source_bytes": 9710776,
+  "encrypted_index_bytes": 19460172,
+  "source_sha256": "611e129498759f597479c5c44ee5ab3cb97830c9fa45b0e826d5cfbc8320f9af",
+  "encrypted_index_sha256": "589c59a2bc32b10ff467076724c5174de26ab51e70f9ced717223d0e235bc61c"
+}
